@@ -11,9 +11,9 @@ app.set('json spaces', 2);
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-//routes
-// app.use('/api/inmuebles', require('./routes/inmuebles'));
+app.use('/api/bienes', require('./rutas/bienes'));
 app.use(express.static('public'))
+
 
 // starts the server
 Server.listen(app.get('port'), () => {

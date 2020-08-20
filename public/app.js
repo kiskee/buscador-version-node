@@ -20,5 +20,15 @@ function setSearch() {
     $('#personalizada').toggleClass('invisible')
   })
 }
+$(document).ready(function(){
+    setSearch()
 
-setSearch()
+    $('#buscar').on('click',() => {
+
+      let urlAPI = 'http://localhost:8080/api/bienes';
+
+      let busquedaAvanzada = $('#checkPersonalizada');
+
+
+    })
+})
