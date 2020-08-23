@@ -11,7 +11,7 @@ app.set('json spaces', 2);
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-app.use('/api/bienes', require('./rutas/bienes'));
+app.use('/api/bienes', require('./router/bienes'));
 app.use(express.static('public'))
 
 
